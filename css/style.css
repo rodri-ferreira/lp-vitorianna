@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none!important;
+    color: #fff;
+}
+
+img {
+    display: block;
+}
+
+/* inicio header */
+.header {
+    width: 100%;
+    background-color: #ffff;
+}
+
+.header .header-1 {
+    width: 100%;
+    height: 25px;
+    background-color: #CBA2A0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center !important; 
+}
+
+.header-1 .header-1-txt {
+    font-size: 0.7rem;
+}
+
+.header-2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    box-shadow: 0px 5px 1px -1px rgba(0, 0, 0, 0.27);
+    /* -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.5); */
+}
+
+.header-2 h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.header-2 img {
+    display: block;
+    height: 100%;
+}
+
+/* fim header */
+
+/* inicio foto banner */
+
+
+.principal .foto-banner {
+    width: 100%;
+    display: block;   
+}
+
+.principal .foto-banner img {
+    width: 100%;
+}
+
+.principal .titulo {
+    width: 100%;
+}
+/* fim foto banner */
+
+/* inicio peça a sua */
+
+.principal .peca-sua h2 {
+    text-align: center;
+    padding: 70px 0;
+    font-size: 2rem;
+    color: #414141;
+}
+
+.principal .peca-sua p {
+    font-size: 1.5rem;
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    color: #796b6a;
+}
+
+.btn-peca-sua {
+    display: block;
+    margin: 70px auto;
+    height: 50px;
+    width: 200px;
+    font-size: 1.5rem;
+    background-color: #CBA2A0;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    position: static;
+}
+
+.btn-peca-sua:hover {
+    background-color: #926d6b;
+    color: #fff;
+    transition: 0.5s;
+}
+/* fim peça a sua */
+
+/* iniio card a sua */
+.cards-fotos {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    padding: 0 50px;
+}
+
+.cards-fotos .card {
+    width: 30%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff2f0;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.34);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.34);
+    transition: 0.5s !important;
+}
+
+.cards-fotos .card:hover {
+    scale: 1.1;
+}
+
+.cards-fotos .card img {
+    display: block;
+    width: 200px;
+    padding: 10px;  
+}
+
+.cards-fotos .card h3 {
+    padding: 10px 30px 0px 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #BC908E;
+}
+
+.cards-fotos .card p {
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #414141;
+}
+/* fim peça a sua */
+
+/* inicio indicacao */
+.indicacao {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 80px 100px 80px;
+    max-width: 1500px;
+}
+
+.indicacao-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.indicacao-txt img {
+    display: block;
+    width: 400px;
+}
+
+.slider {
+    width: 250px;
+    height: 444px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-slide {
+    flex: 0 0 100%;
+}
+
+.video {
+    width: 250px;
+    height: 444px;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    background-color: transparent;
+}
+
+#prevBtn {
+    left: 10px;
+    font-size: 32px;
+    color: #fff;
+}
+
+#nextBtn {
+    right: 10px;
+    font-size: 32px;
+    color: #fff;
+}
+
+/* fim indicacao */
+
+/*inicio promoção */
+.promocao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.promocao h2 {
+    font-size: 2.5rem;
+    color: #BC908E;
+}
+
+.promocao img {
+    width: 800px;
+    margin-bottom: -50px;
+}
+
+/*fim promoção */
+
+/* inicio compra garantida */
+
+.compra-garantida {
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.compra-garantida i {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: #BC908E;
+    margin-bottom: 5px;
+}
+
+.row {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+/* fim compra garantida */
+
+/* inicio rodapé */
+
+.rodape {
+    background-color: #BC908E;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.largura-max {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.footer-div h3 {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer-div a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-div a p {
+    padding: 5px 0;
+    font-weight: 200;
+}
+
+.sloth img { 
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+}
+
+.termos i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* fim inicio rodapé */
+
+/* btn-WhatsApp */
+
+.btn-whatsapp i {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.btn-whatsapp img {
+    display: block;
+}
+
+
+@media screen and (max-width: 992px) {
+    .header-2 {
+        height: 70px;
+    }
+
+    .header-2 img {
+        content: url('../img/simbolo_vitorianna.png');
+        height: 80%;
+    }
+
+    .foto-banner img {
+        content: url('../img/mandala-800x800-1-800x800.jpg');
+    }
+
+    .cards-fotos {
+        gap: 50px;     
+    }
+
+    .principal .peca-sua h2 {
+        font-size: 1.5rem;
+    }
+    
+    .principal .peca-sua p {
+        font-size: 1rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        color: #796b6a;
+    }
+
+    .btn-peca-sua {
+        margin-bottom: 20px;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .promocao img {
+        width: 90%;
+    }
+
+    .promocao h2 {
+        font-size: 2rem; 
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .header-1 .header-1-txt:nth-child(3) {
+        display: none;
+    }
+
+    .cards-fotos {
+        flex-direction: column; 
+        padding: 40px;   
+    }
+
+    .cards-fotos .card {
+        width: 100%;
+    }
+
+    .cards-fotos .card img {
+        width: 100%;
+        padding: 10px;  
+    }
+
+    .btn-whatsapp i {
+        font-size: 32px;
+    }
+
+    .principal .peca-sua h2 {
+        font-size: 1.2rem;
+        padding: 50px 0;
+    }
+
+    .indicacao {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .indicacao-txt img {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 50px;
+        margin: 20px 0;
+    }
+
+    .largura-max .sobre {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 540px) {
+    .header-1 .header-1-txt:nth-child(2) {
+        display: none;
+    }
+
+}
