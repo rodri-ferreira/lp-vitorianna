@@ -47,8 +47,6 @@ img {
     margin-top: 10px;
     margin-bottom: 3px;
     box-shadow: 0px 5px 1px -1px rgba(0, 0, 0, 0.27);
-    /* -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.5); */
 }
 
 .header-2 h1 {
@@ -73,6 +71,36 @@ img {
 
 .principal .foto-banner img {
     width: 100%;
+}
+
+.icons {
+    width: 91%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border-top: 1px solid #CBA2A0;
+    border-bottom: 1px solid #CBA2A0;
+}
+
+.icons i {
+    font-size: 25px;
+    color: #CBA2A0;
+    margin-right: 10px;
+}
+
+.icons p {
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.top-text {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
 }
 
 .principal .titulo {
@@ -136,9 +164,9 @@ img {
     background-color: #fff2f0;
     border-radius: 10px;
     cursor: pointer;
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.34);
-    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.34);
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.34);
+    /* -webkit-box-shadow: 0px 50px 50px 0px rgba(54, 54, 54, 0.5);
+    -moz-box-shadow: 0px 50px 50px 0px rgba(54, 54, 54, 0.5); */
+    box-shadow: 5px 5px 5px 5px rgba(196, 196, 196, 0.05);
     transition: 0.5s !important;
 }
 
@@ -316,6 +344,8 @@ img {
 
 .termos i {
     margin: 0 5px;
+    color: #fff;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -341,12 +371,16 @@ img {
     }
 
     .header-2 img {
-        content: url('../img/simbolo_vitorianna.png');
+        content: url('../img/logo-topo-site-mobile.png');
         height: 80%;
     }
 
     .foto-banner img {
-        content: url('../img/mandala-800x800-1-800x800.jpg');
+        content: url('../img/mandala-mobile.jpg');
+    }
+
+    .icons p {
+        font-size: 11pt;
     }
 
     .cards-fotos {
@@ -436,6 +470,15 @@ img {
 @media screen and (max-width: 540px) {
     .header-1 .header-1-txt:nth-child(2) {
         display: none;
+    }
+
+    .icons p {
+        font-size: 8pt;
+    }
+
+    .btn-whatsapp img {
+        display: block;
+        content: url('../img/icons8-whatsapp-48.png');
     }
 
 }
